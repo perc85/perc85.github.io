@@ -10,15 +10,31 @@
         --UNC-Gold: #f6b000;
         --UNC-Grey: #60697a;
       }
+      @font-face
+      {
+        font-family: UNCTitle;
+        src: url('css/fonts/TiltPrism.ttf');
+      }
+      @font-face
+      {
+        font-family: UNCText;
+        src: url('css/fonts/Arvo.ttf');
+      }
       h1
       {
+        font-family: UNCTitle;
         color: var(--UNC-Blue);
         font-size: 38pt;
       }
       h2
       {
+        font-family: UNCText;
         color: var(--UNC-Gold);
         font-size: 30pt;
+      }
+      h3
+      {
+        font-family: UNCText;
       }
       body
       {
