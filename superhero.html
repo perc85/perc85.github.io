@@ -2,14 +2,72 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Template</title>
+        <title>Superheroes</title>
         
         <style>
-            /*Some day ill use css*/
+            .heropic
+            {
+                height:100px;
+            }
+            table
+            {
+                border-spacing: 0px;
+            }
+            th, td
+            {
+                border: 2px solid black;
+                padding: 15px;
+            }
+            th
+            {
+                background-color: darkslategrey;
+                font-size: 18px;
+            }
         </style>
         
     </head>
     <body>
-        <h1>Page Title</h1>
+        <h1>My Superheroes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alias</th>
+                    <th>Image</th>
+                    <th>Superpower</th>
+                    <th>Weakness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Batman</th>
+                    <td>Bruce&nbsp;Wayne</td>
+                    <td><a href="images/Batman.jpg"><img alt="Batman Pic" class="heropic" src="images/Batman.jpg"></a></td>
+                    <td>N/A</td>
+                    <td>
+                        <ul>
+                            <li>Human/Vulnerable</li>
+                            <li>Childhood Trauma</li>
+                            <li>Won't Kill</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Superman</th>
+                    <td>Clark Kent</td>
+                    <td><a href="images/Superman.jpg"><img alt="Superman Pic" class="heropic" src="images/Superman.jpg"></a></td>
+                    <td>
+                        <ul>
+                            <li>Invulnerable</li>
+                            <li>Flight</li>
+                            <li>Super Strong</li>
+                            <li>X-ray Vision</li>
+                            <li>Laser Eyes</li>
+                        </ul>
+                    </td>
+                    <td>Kryptonite</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
