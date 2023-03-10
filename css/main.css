@@ -1,23 +1,21 @@
-@font-face
-{
-  font-family: theTitle;
-  src: url('css/fonts/Rampart.tff');
-}
 body
 {
     background-color: silver;
 }
 h1
 {
-    font-family: theTitle;
-    font-size: x-large;
+    font-family:theTitle;
+    font-size: 38px;
     color: indianred;
 }
 img
 {
     border: 10px solid tan;
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1:hover,h2:hover,body:hover
 {
@@ -26,6 +24,7 @@ h1:hover,h2:hover,body:hover
 li
 {
     color:aqua;
+    font-size: 20px;
 }
 th , td
 {
