@@ -9,11 +9,11 @@
     <body>
         <h1>Testing Page!</h1>
         <table>
-            <tr>
-                <th>Page Name</th>
-                <th>URL</th>
-                <th>Validation</th>
-            </tr>
+            <thead>
+                <th class="cheader" id="pagename">Page Name</th>
+                <th class="cheader">URL</th>
+                <th class="cheader">Validation</th>
+            </thead>
             <tr>
                 <th>Index</th>
                 <td><a href="index.html">https://perc85.github.io/index.html</a></td>
@@ -45,5 +45,13 @@
                 <td><a href="https://validator.w3.org/nu/?doc=https://perc85.github.io/template.html">Validation</a></td>
             </tr>
         </table>
+        <form action="https://validator.w3.org/nu/" methods="GET">
+            <input type="text" name="doc">
+        </form>
+        <p>My Links!<br>
+        <a href="index.html">HOME</a><br>
+        <a href="test.html">TEST</a>
+        </p>
+
     </body>
 </html>
