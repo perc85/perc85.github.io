@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Super Search</title>
+        <link rel="stylesheet" href="css/main.css"> 
+    </head>
+    <body>
+        <h1>Google Super Search</h1>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <fieldset>
+                <label for="searchbox">Search String</label>
+                <input type="text" name="as_epq" placeholder="Specific String Search">
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="searchbox">Search Site</label>
+                    <input type="text" name="as_sitesearch" name="safe" placeholder="Enter Valid Website">
+                </div>
+                <div>
+                    <input type="checkbox" name="newwindow">
+                    <label for="checkwindow">Valid Site?</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="searchbox">Word Search</label>
+                <input type="text" name="as_oq" placeholder="Enter Words To Search">
+            </fieldset>
+            <fieldset>
+                <label for="searchbox">Unwanted words</label>
+                <input type="text" name="as_eq" placeholder="Enter Unwanted Words">
+            </fieldset>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
