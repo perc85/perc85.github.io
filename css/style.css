@@ -1,49 +1,16 @@
+:root
+{
+    --UNC-Blue: #013c65;
+    --UNC-Gold: #f6b000;
+    --UNC-Grey: #8a8a8d;
+}
 body
 {
-    background-color: cyan;
+    background-color: var(--UNC-Gray);
 }
-thead
+*
 {
-    background-color:gray;
-}
-.cheader
-{
-    color: purple;
-    border: 5px solid black;
-}
-#pagename
-{
-    color:crimson;
-}
-th , td
-{
-    border: 2px solid black;
-}
-a
-{
-    font-size: 12pt;
-}
-table a
-{
-    font-size: 6pt;
-}
-th:hover
-{
-    color: yellowgreen;
-}
-:visited
-{
-    color: coral;
-}
-body > a, tr > td, p >a
-{
-    font-family: Impact;
-}
-p
-{
-    font-size: 15pt;
-}
-p::first-letter
-{
-    font-size: 20pt;
+    color: var(--UNC-Blue);
+    text-align: center;
+    font-size: 5 vw;
 }
