@@ -1,0 +1,60 @@
+:root
+{
+    --WalmartDarkBlue: RGB(4,31,65);
+    --WalmartYellow: RGB(252, 182, 26);
+    --WalmartLightBlue: RGB(0,113,206);
+}
+.center
+{
+    text-align: center;
+}
+.centerimg 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+body
+{
+    background-color: var(--WalmartDarkBlue)
+}
+h1,h2,h3
+{
+    text-align: center;
+    color: var(--WalmartYellow)
+}
+nav
+{
+    border: 3px var(--WalmartYellow) solid;
+}
+a
+{
+    color: var(--WalmartYellow);
+    border: var(--WalmartYellow);
+    font-size: 28px;
+}
+div
+{
+    border: var(--WalmartYellow);
+}
+img
+{
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+p
+{
+    color: white;
+    font-size: x-large;
+}
+li
+{
+    color: var(--WalmartLightBlue);
+    font-size: x-large;
+}
+.myUL {
+    display: inline-block;
+    text-align: left;
+  }
