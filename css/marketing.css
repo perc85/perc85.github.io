@@ -1,7 +1,7 @@
 :root
 {
     --WalmartDarkBlue: RGB(4,31,65);
-    --WalmartYellow: RGB(252, 182, 26);
+    --WalmartYellow: RGB(255,194,32);
     --WalmartLightBlue: RGB(0,113,206);
 }
 .center
@@ -52,7 +52,7 @@ p
 }
 li
 {
-    color: var(--WalmartLightBlue);
+    color: var(--WalmartYellow);
     font-size: x-large;
 }
 .myUL 
