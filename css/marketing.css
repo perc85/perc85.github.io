@@ -37,6 +37,7 @@ a
 div
 {
     border: var(--WalmartYellow);
+    color: white;
 }
 img
 {
@@ -54,7 +55,17 @@ li
     color: var(--WalmartLightBlue);
     font-size: x-large;
 }
-.myUL {
+.myUL 
+{
     display: inline-block;
     text-align: left;
-  }
+}
+.grid
+{
+    display: grid;
+    place-items: center;
+}
+p
+{
+    text-align: center;
+}
