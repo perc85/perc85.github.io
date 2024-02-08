@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSIC</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            height: 100%;
+        }
+
+        #mute-toggle {
+            position: fixed;
+            right: 20px; /* 20 pixels from the right */
+            bottom: 20px; /* 20 pixels from the bottom */
+            z-index: 101; /* Ensure it's above other content */
+            padding: 10px 20px; /* Adjust padding as needed */
+            font-size: 16px; /* Adjust font size as needed */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            background-color: #444; /* Background color of the button */
+            color: white; /* Text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+    </style>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+
+
+<button id="mute-toggle">Unmute</button>
+
+<div id="player" class="video-background"></div>
+
+<script>
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      videoId: 'Yzo2zZbrbpU',
+      playerVars: {
+        'autoplay': 1,
+        'controls': 0,
+        'mute': 1,
+        'loop': 1,
+        'playlist': 'Yzo2zZbrbpU',
+        'rel': 0,
+        'showinfo': 0
+      },
+      events: {
+        'onReady': onPlayerReady,
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    var muteToggleBtn = document.getElementById('mute-toggle');
+    muteToggleBtn.addEventListener('click', function() {
+      var isMuted = player.isMuted();
+      if (isMuted) {
+        player.unMute();
+        muteToggleBtn.innerHTML = 'Mute';
+      } else {
+        player.mute();
+        muteToggleBtn.innerHTML = 'Unmute';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
+
+
+  
